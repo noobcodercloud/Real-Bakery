@@ -9,18 +9,6 @@ const ProductsGrid = () => {
     { image_url: milkShake, title: "Milk Shake", price: "79" },
     { image_url: Espresso, title: "Espresso", price: "129" },
     { image_url: cake, title: "Cake", price: "499" },
-    { image_url: matcha, title: "Matcha", price: "399" },
-    { image_url: milkShake, title: "Milk Shake", price: "79" },
-    { image_url: Espresso, title: "Espresso", price: "129" },
-    { image_url: cake, title: "Cake", price: "499" },
-    { image_url: matcha, title: "Matcha", price: "399" },
-    { image_url: milkShake, title: "Milk Shake", price: "79" },
-    { image_url: Espresso, title: "Espresso", price: "129" },
-    { image_url: cake, title: "Cake", price: "499" },
-    { image_url: matcha, title: "Matcha", price: "399" },
-    { image_url: milkShake, title: "Milk Shake", price: "79" },
-    { image_url: Espresso, title: "Espresso", price: "129" },
-    { image_url: cake, title: "Cake", price: "499" },
     { image_url: matcha, title: "Matcha", price: "399" }
   ];
 

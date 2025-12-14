@@ -14,7 +14,7 @@ import SubHeaders from './components/SubHeaders.jsx'
 
 export default function App() {
   return (
-    <div className="font-customOutfit">
+    <div className="font-customOutfit overflow-x-hidden">
       <Navbar />
       <div className="overflow-x-hidden">
         <div>
@@ -26,6 +26,7 @@ export default function App() {
           <ExploreButton />
         </div>
       </div>
+      <SubHeaders />
       <ProductsGrid />
       <Footer />
     </div>

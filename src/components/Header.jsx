@@ -3,7 +3,7 @@ import pin from '../images/pin.png';
 const Header = () => {
   return (
     <div className="min-h-20 flex justify-between py-5 px-3 relative">
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center mb-5">
         <img src={pin} alt="PIN" width="30px" className='mx-1'/>
         <div>
           <div>Address - #123, ABC CITY</div>
