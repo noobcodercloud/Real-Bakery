@@ -23,7 +23,7 @@ const SubHeaders = (props) => {
 
     return (
         <div className='flex items-center justify-center my-7 py-5'>
-            <div ref={Ref} className="text-6xl sm:text-9xl font-bold bg-linear-to-b from-amber-700 to-amber-200/40 scale-80 opacity-0 delay-200 duration-1000 bg-clip-text text-transparent relative transition-all">
+            <div ref={Ref} className="text-6xl sm:text-9xl font-bold bg-linear-to-b from-amber-700 to-amber-200/40 scale-80 opacity-0 delay-200 duration-1000 bg-clip-text text-transparent relative transition-all text-center">
                 CAKE & COFFEE
             </div>
         </div>

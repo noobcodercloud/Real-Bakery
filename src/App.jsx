@@ -1,6 +1,3 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import './index.css'
 import Navbar from './components/Navbar.jsx'
@@ -16,7 +13,7 @@ export default function App() {
   return (
     <div className="font-customOutfit overflow-x-hidden">
       <Navbar />
-      <div className="overflow-x-hidden">
+      <div>
         <div>
           <Header />
           <Hero />
