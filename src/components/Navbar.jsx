@@ -93,4 +93,4 @@ const Navbar = () => {
   );
 };
 
-export default { Navbar, Address };
+export default Navbar;

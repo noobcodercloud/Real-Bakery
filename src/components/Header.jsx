@@ -1,6 +1,4 @@
 import pin from '../images/pin.png';
-import data from './Navbar';
-const { Navbar, Address} = data;
 
 const Header = () => {
   return (
@@ -8,7 +6,7 @@ const Header = () => {
       <div className="flex items-center justify-center mb-5">
         <img src={pin} alt="PIN" width="30px" className='mx-1'/>
         <div>
-          <div>Address - {Address}</div>
+          <div>Address - #123, ABC CITY</div>
           <div className="text-xs text-gray-800">9999988888</div>
         </div>
       </div>
