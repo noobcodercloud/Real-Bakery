@@ -40,22 +40,33 @@ const ProductCard = (props) => {
   return (
     <div
       ref={cardRef}
-      className="group border border-amber-200/50 bg-linear-to-br from-amber-50 to-amber-100 rounded-2xl p-5 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+      className="group relative bg-white border border-gray-100 rounded-2xl p-4 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
       style={{
         opacity: isVisible ? 1 : 0,
         transform: isVisible ? 'translateX(0)' : `translateX(${props.slideFrom === 'left' ? '-100px' : '100px'})`,
         transition: 'opacity 0.8s ease-out, transform 0.8s ease-out'
       }}
     >
-      <div className="bg-white h-56 w-full rounded-2xl overflow-hidden flex sm:flex-col shadow-sm items-center justify-evenly">
-        <div className="h-3/5 bg-linear-to-br from-amber-50 to-amber-100 border border-amber-200/50 rounded-xl m-3 flex items-center justify-center text-amber-800 font-semibold overflow-hidden group-hover:scale-105 transition-transform duration-300">
-          <img src={props.image_url} alt="IMAGE" className="w-full h-full object-cover" />
+      <div className="bg-linear-to-br from-amber-50 to-orange-50 rounded-xl overflow-hidden">
+        {/* Image Section */}
+        <div className="relative h-40 w-full overflow-hidden">
+          <img
+            src={props.image_url}
+            alt={props.title}
+            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+          />
+          <div className="absolute inset-0 bg-linear-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
         </div>
-        <div className="w-[77%] flex flex-col sm:flex-row sm:justify-between items-center border border-amber-200/50 rounded-xl mx-3 mb-3 px-4 py-3 bg-linear-to-r from-amber-50 to-orange-50">
-          <span className="font-bold text-amber-900 text-lg">{props.title}</span>
-          <span className="font-bold text-green-600 text-lg">₹{props.price}</span>
+
+        {/* Title and Price Section */}
+        <div className="flex items-center justify-between px-4 py-3 bg-white">
+          <span className="font-bold text-gray-900 text-base truncate pr-3">{props.title}</span>
+          <span className="font-black text-amber-700 text-lg whitespace-nowrap">₹{props.price}</span>
         </div>
       </div>
+
+      {/* Accent bar on hover */}
+      <div className="absolute inset-x-0 bottom-0 h-1 bg-linear-to-r from-amber-600 to-orange-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 rounded-b-2xl" />
     </div>
   );
 };
