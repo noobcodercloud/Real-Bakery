@@ -1,12 +1,16 @@
-import pin from '../images/pin.png';
+import pin from '../../images/pin.png';
+import { useParams } from 'react-router-dom';
 
 const Header = () => {
+
+  const params = useParams();
+
   return (
     <div className="min-h-20 flex justify-between py-5 px-3 relative mt-3 sm:mt-25">
       <div className="flex items-center justify-center mb-5">
         <img src={pin} alt="PIN" width="30px" className='mx-1'/>
         <div>
-          <div>Address - #123, ABC CITY</div>
+          <div>Address - {params.address || "#123, ABC CITY"}</div>
           <div className="text-xs text-gray-800">9999988888</div>
         </div>
       </div>

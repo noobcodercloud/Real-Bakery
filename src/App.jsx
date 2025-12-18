@@ -1,31 +1,43 @@
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css'
 import './index.css'
-import Navbar from './components/Navbar.jsx'
-import Header from './components/Header.jsx'
-import Hero from './components/Hero.jsx'
-import Description from './components/Description.jsx'
-import ExploreButton from './components/ExploreButton.jsx'
-import ProductsGrid from './components/ProductsGrid.jsx'
-import Footer from './components/Footer.jsx'
-import SubHeaders from './components/SubHeaders.jsx'
+import Home from './pages/Home.jsx'
+import Navbar from './components/HomeComponents/Navbar.jsx';
+import Login from './pages/Login.jsx'
+import About from './pages/About.jsx'
+import Contact from './pages/Contact.jsx'
+
 
 export default function App() {
+
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <><Navbar /><Home /></>
+    },
+    {
+      path: '/:address',
+      element: <><Navbar /><Home /></>
+    },
+    {
+      path: '/About',
+      element: <><Navbar /><About /></>
+    },
+    {
+      path: '/Contact',
+      element: <><Navbar /><Contact /></>
+    },
+    {
+      path: '/Login',
+      element: <><Navbar /><Login /></>
+    }
+  ])
+
   return (
-    <div className="font-customOutfit overflow-x-hidden">
-      <Navbar />
-      <div>
-        <div>
-          <Header />
-          <Hero />
-          <Description />
-        </div>
-        <div>
-          <ExploreButton />
-        </div>
+    <>
+      <div className="font-customOutfit overflow-x-hidden">
+        <RouterProvider router={router} />
       </div>
-      <SubHeaders />
-      <ProductsGrid />
-      <Footer />
-    </div>
+    </>
   );
 }

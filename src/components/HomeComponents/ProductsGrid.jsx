@@ -1,8 +1,8 @@
 import ProductCard from "./ProductCard.jsx";
-import milkShake from '../images/milkShake.png';
-import Espresso from '../images/Espresso.png';
-import matcha from '../images/matcha.png';
-import cake from '../images/cake.jpg';
+import milkShake from '../../images/milkShake.png';
+import Espresso from '../../images/Espresso.png';
+import matcha from '../../images/matcha.png';
+import cake from '../../images/cake.jpg';
 
 const ProductsGrid = () => {
   const products = [

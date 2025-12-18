@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import cookieImg from '../images/cookie.png';
+import cookieImg from '../../images/cookie.png';
 
 const Hero = () => {
   const [scrollY, setScrollY] = useState(0);
