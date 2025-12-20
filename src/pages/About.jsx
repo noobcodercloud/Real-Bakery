@@ -1,9 +1,11 @@
+import Image_and_text from "../components/AboutComponents/Image_and_text";
+import Header from "../components/AboutComponents/Header.jsx"
+
 const Login = () => {
     return (
         <>
-            <div className="text-3xl sm:text-9xl h-screen w-screen flex justify-center items-center">
-                ABOUT
-            </div>
+            <Header />
+            <Image_and_text />
         </>
     )
 }
